@@ -1,20 +1,20 @@
-<mxfile host="Electron" modified="2023-11-18T22:37:33.823Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="EOvg6m02tifxaR5YADbc" version="22.1.2" type="device">
+<mxfile host="Electron" modified="2023-11-18T22:41:07.429Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="ss31fRDfOSy3pHzHp14g" version="22.1.2" type="device">
   <diagram name="Page-1" id="a9VuShd5SKipRdLEGQU_">
-    <mxGraphModel dx="1098" dy="988" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2567" dy="2158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="card-class" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Card Class&lt;/b&gt;&lt;br&gt;---&lt;br&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;Attributes: value, suit, name.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="70" y="50" width="300" height="150" as="geometry" />
+          <mxGeometry x="299.99999999999994" y="110" width="300" height="150" as="geometry" />
         </mxCell>
         <mxCell id="deck-class" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Deck Class&lt;/b&gt;&lt;br&gt;---&lt;br&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;Attributes: cards (a collection of Card objects). Methods: initializeDeck, shuffle, draw. Association: Aggregates Card objects.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="30" y="260" width="400" height="200" as="geometry" />
+          <mxGeometry x="990" y="620" width="400" height="200" as="geometry" />
         </mxCell>
         <mxCell id="player-class" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Player Class&lt;/b&gt;&lt;br&gt;---&lt;br&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;Attributes: name, type, hand (a collection of Card objects), cash. Methods: [Player-specific methods]. Association: Aggregates Card objects in hand.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="420" y="50" width="320" height="160" as="geometry" />
+          <mxGeometry x="1890" y="190" width="320" height="160" as="geometry" />
         </mxCell>
         <mxCell id="game-class" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Game Class&lt;/b&gt;&lt;br&gt;---&lt;br&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;Attributes: deck, playerHand, readline, Box. Methods: play, playCard, discardCard, dealInitialHand, displayHand. Association: Composed of Deck, manages Card objects, interacts with Player.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="340" y="680" width="400" height="200" as="geometry" />
+          <mxGeometry x="930" y="1300" width="400" height="200" as="geometry" />
         </mxCell>
         <mxCell id="game-deck-connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="game-class" target="deck-class" edge="1">
           <mxGeometry relative="1" as="geometry" />
