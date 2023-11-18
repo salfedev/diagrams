@@ -1,0 +1,42 @@
+<mxfile host="app.diagrams.net" modified="2023-11-18T22:08:57.391Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="V4ZutdtUTkoIGKRrcPs-" version="22.1.3" type="device">
+  <diagram name="Page-1" id="a9VuShd5SKipRdLEGQU_">
+    <mxGraphModel dx="1114" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Card Class -->
+        <mxCell id="card-class" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Card Class&lt;/b&gt;&lt;br&gt;---&lt;br&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;Attributes: value, suit, name.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="70" y="50" width="200" height="100" as="geometry" />
+        </mxCell>
+        <!-- Deck Class -->
+        <mxCell id="deck-class" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Deck Class&lt;/b&gt;&lt;br&gt;---&lt;br&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;Attributes: cards (a collection of Card objects). Methods: initializeDeck, shuffle, draw. Association: Aggregates Card objects.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="200" height="100" as="geometry" />
+        </mxCell>
+        <!-- Player Class -->
+        <mxCell id="player-class" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Player Class&lt;/b&gt;&lt;br&gt;---&lt;br&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;Attributes: name, type, hand (a collection of Card objects), cash. Methods: [Player-specific methods]. Association: Aggregates Card objects in hand.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="540" y="50" width="200" height="100" as="geometry" />
+        </mxCell>
+        <!-- Game Class -->
+        <mxCell id="game-class" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;Game Class&lt;/b&gt;&lt;br&gt;---&lt;br&gt;&lt;span style=&quot;font-size: 15px; background-color: initial;&quot;&gt;Attributes: deck, playerHand, readline, Box. Methods: play, playCard, discardCard, dealInitialHand, displayHand. Association: Composed of Deck, manages Card objects, interacts with Player.&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="300" y="180" width="200" height="100" as="geometry" />
+        </mxCell>
+        <!-- Connection from Game to Deck -->
+        <mxCell id="game-deck-connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="game-class" target="deck-class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Connection from Game to Player -->
+        <mxCell id="game-player-connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="game-class" target="player-class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Connection from Deck to Card -->
+        <mxCell id="deck-card-connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="deck-class" target="card-class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- Connection from Player to Card -->
+        <mxCell id="player-card-connection" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="player-class" target="card-class">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
