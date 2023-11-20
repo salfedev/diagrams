@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net" modified="2023-11-18T22:08:57.391Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="V4ZutdtUTkoIGKRrcPs-" version="22.1.3" type="device">
+  <diagram name="Page-1" id="a9VuShd5SKipRdLEGQU_">
+    <mxGraphModel dx="1114" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <!-- Ace of Spades -->
+        <mxCell id="ace-spades" value="&lt;font style=&quot;font-size: 16px; color: black;&quot;&gt;A&amp;spades;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;arcSize=10;fillColor=#FFFFFF;strokeColor=#000000;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="80" height="120" as="geometry" />
+        </mxCell>
+        <!-- 2 of Spades -->
+        <mxCell id="two-spades" value="&lt;font style=&quot;font-size: 16px; color: black;&quot;&gt;2&amp;spades;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;arcSize=10;fillColor=#FFFFFF;strokeColor=#000000;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="100" width="80" height="120" as="geometry" />
+        </mxCell>
+        <!-- 3 of Spades -->
+        <mxCell id="three-spades" value="&lt;font style=&quot;font-size: 16px; color: black;&quot;&gt;3&amp;spades;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=1;arcSize=10;fillColor=#FFFFFF;strokeColor=#000000;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="80" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
